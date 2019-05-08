@@ -28,7 +28,7 @@ end
 
 def valid_phone_number?(phone)
   #(555)-(555)-(5555)
-  if phone.match(/([0-9])/) 
+  if phone.match(/([0-9]{3})([0-9]{3})([0-9]{4})/) 
     return true
     
   else
